@@ -11,10 +11,6 @@ from itertools import product
 
 """
 
-ban = '''
-                                            '''
-
-
 scale = input(" \033[32m[*]  Digite o tamanho da scala [EX 1 ate 8= [1:8]:  ")
 comeco = int(scale.split(':')[0])
 fim = int(scale.split(':')[1])
@@ -78,8 +74,5 @@ try:
 
 except(KeyboardInterrupt):
     print(" \033[31m Usuario interrompeu o processo \033[m ") 
-
-
-
     arquivo.close()
   
