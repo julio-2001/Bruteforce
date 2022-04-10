@@ -1,18 +1,28 @@
+
+
+#funções
 import time as t
 from itertools import product
 
+#redes
 import socket as sk
 import socketserver as sks
-
-import pyautogui as py
-import pandas as p
-import websocket as ws
 import requests as rts
+import urllib3 as url 
+import websocket as ws
+import w3lib as wb
+
+#automação
+import pyautogui as py
+
+#analise de dados
+import pandas as p
+
+#deep learning
+import keras as ks
 
 enreco_ip = sk.gethostname
 endereco_ip = sk.gethostname
-
-
 
 
 
@@ -20,8 +30,6 @@ endereco_ip = sk.gethostname
                     -world  list-
             
 """
-
-
 
 scale = input(" \033[32m[*]  Digite o tamanho da scala [EX 1 ate 8= [1:8]:  ")
 
