@@ -18,6 +18,7 @@ char =  ''
 chars_lista = list(char)
 
 
+
 senha = py.password("Digite a senha;   ")
 limite = py.write("Digite o limite:  ")
 senha_a = ''

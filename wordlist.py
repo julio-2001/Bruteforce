@@ -1,6 +1,21 @@
 
+#procesamento funcões e dados
 
-#funções
+import threading as th
+import multiprocessing as mlp
+
+
+import subprocess as sbss
+
+
+import secrets as sts 
+
+#cryptografia
+import base64 as b6 
+
+import json 
+import cryptography as cry
+import math as th
 import time as t
 from itertools import product
 
@@ -8,33 +23,42 @@ from itertools import product
 import socket as sk
 import socketserver as sks
 import requests as rts
+
+
 import urllib3 as url 
 import websocket as ws
 import w3lib as wb
 
-#automação
-import pyautogui as py
+
 
 #analise de dados
 import pandas as p
+import numpy as np
+import statistics as stis
 
-#deep learning
-import keras as ks
-
-enreco_ip = sk.gethostname
-endereco_ip = sk.gethostname
+#scanner de redes
+import nmap as nm
 
 
+#--------------------------------------------------------------
+"""
+requesição = rts.get("https://nordvpn.com/pt-br/ip-lookup/")
+requesição.status_code
+print(requesição)
+
+"""
 
 """"
-                    -world  list-
+                    -Lista brute force-
             
 """
 
-scale = input(" \033[32m[*]  Digite o tamanho da scala [EX 1 ate 8= [1:8]:  ")
+
+
+scale = input(" \033[32m[*]  Digite o tamanho da scala  EX: [1:8]:  ")
 
 print(" \033[1;33;44m Para parar o processo digite [CTRL + C]! \033[m ")
-t.sleep(2)
+t.sleep(4)
 
 comeco = int(scale.split(':')[0])
 fim = int(scale.split(':')[1])
@@ -93,6 +117,7 @@ try:
             temp = '' .join(j)
             print(f" \033[36m <<<==========   \033[32m[  {temp}  ]\033[m  \033[36m ==========>>> \033[m  \033[30;43;1m {cont} \033[m   \033[34;42;1m {tempo} \033[m  ")
             arquivo.write(temp + ' \n')
+
             cont += 1
             
 
@@ -100,4 +125,4 @@ except(KeyboardInterrupt):
     print(" \033[31m Usuario interrompeu o processo \033[m ") 
     print(f"Senhas registradas \033[1;32m {cont} \033[m  tempo termino \033[1;36m {tempo} \033[m  ")
     arquivo.close()
-  
+
