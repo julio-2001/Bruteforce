@@ -55,7 +55,6 @@ print(requesição)
 """
 
 
-scale = input(" \033[32m[*]  Digite o tamanho da scala [EX 1 ate 8= [1:8]:  ")
 
 """"
                     -Lista brute force-
@@ -63,14 +62,6 @@ scale = input(" \033[32m[*]  Digite o tamanho da scala [EX 1 ate 8= [1:8]:  ")
 """
 
 
-
-scale = input(" \033[32m[*]  Digite o tamanho da scala  EX: [1:8]:  ")
-
-print(" \033[1;33;44m Para parar o processo digite [CTRL + C]! \033[m ")
-t.sleep(4)
-
-
-t.sleep(50)
 scale = input(" \033[32m[*]  Digite o tamanho da senha [EX 4 ate 8= [4:8]:  ")
 
 
@@ -82,11 +73,6 @@ comeco = int(scale.split(':')[0])
 fim = int(scale.split(':')[1])
 
 t.sleep(0.5)
-
-
-
-
-
 
 
 info_pessoais = str(input("\n \033[32m[*] Deseja colocar informações pessoais? [s ou n]  :  "))
@@ -151,11 +137,8 @@ try:
 
         for j in product(chars, repeat=i):
             tempo = t.strftime("%H:%M:%S")
-            CombinacoesSenhas = pms([comeco , chars.strip    ],comeco)
-
-
             temp = '' .join(j)
-            print(f" \033[36m <<<==========   \033[32m[  {temp}  ]\033[m  \033[36m ==========>>> \033[m  \033[30;43;1m {cont} \033[m   \033[34;42;1m {tempo} \033[m   {CombinacoesSenhas.__str__}  ")
+            print(f" \033[36m <<<==========   \033[32m[  {temp}  ]\033[m  \033[36m ==========>>> \033[m  \033[30;43;1m {cont} \033[m   \033[34;42;1m {tempo} \033[m ")
             arquivo.write(temp + ' \n')
 
             cont += 1
